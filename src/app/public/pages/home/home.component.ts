@@ -1,10 +1,14 @@
 import {Component, inject, OnInit} from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
+import { EventSummaryLogComponent } from '../../../registration/components/event-summary-log/event-summary-log.component';
+
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [
+    EventSummaryLogComponent
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
