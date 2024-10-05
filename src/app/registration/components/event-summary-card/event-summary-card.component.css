@@ -1,0 +1,23 @@
+.card {
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.card__footer,
+.card__content{
+  text-align: justify;
+  padding-left: 1rem;
+}
+
+.card__content {
+  margin-bottom: 1rem;
+}
+
+.card__content > p {
+  font-weight: 700;
+}
+
+.card__footer {
+  display: flex;
+  flex-direction: column;
+}
