@@ -28,7 +28,7 @@ export class BaseService<T> {
     return `${this.basePath}/${this.resourceEndpoint}`;
   }
 
-  protected getAll(): Observable<T[]> {
+  public getAll(): Observable<T[]> {
     return this.http.get<T[]>(this.resourcePath(), this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
