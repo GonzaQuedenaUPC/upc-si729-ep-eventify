@@ -1,4 +1,4 @@
-class EventSummaryEntity {
+class Event {
 
   private readonly _id: number = 0;
   private readonly _name: string = '';
@@ -28,3 +28,5 @@ class EventSummaryEntity {
     return this._scheduleAt;
   }
 }
+
+export default Event;
